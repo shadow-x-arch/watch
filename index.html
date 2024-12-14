@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-100 min-h-screen flex items-center justify-center text-gray-900">
+    <div id="container" class="flex flex-col items-center justify-center bg-white bg-opacity-90 rounded-lg shadow-2xl p-10">
+        <h1 class="text-5xl font-bold uppercase mb-8 text-gray-800 drop-shadow-lg">Stopwatch</h1>
+        <div id="clock" class="text-center text-6xl font-mono font-bold bg-gray-800 bg-opacity-80 text-white p-6 rounded-md shadow-inner mb-8 transition transform hover:scale-105 duration-300">
+            00:00:00:00
+        </div>
+        <div id="controllers" class="flex gap-6">
+            <button id="start" onclick="start()" class="px-8 py-3 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition transform hover:scale-105 duration-300">Start</button>
+            <button id="stop" onclick="stop()" class="px-8 py-3 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition transform hover:scale-105 duration-300">Stop</button>
+            <button id="reset" onclick="reset()" class="px-8 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition transform hover:scale-105 duration-300">Reset</button>
+        </div>
+    </div>
+    <script src="watch.js"></script>
+</body>
+</html>
